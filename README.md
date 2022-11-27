@@ -196,3 +196,13 @@ Namun khusus untuk `The Resonance`, router ini membutuhkan 3 lubang ethernet. Ma
 # CIDR - GNS3
 ## Penggabungan Subnet
 Kita melakukan penggabungan subnet-subnet paling bawah dalam topologi yaitu dimulai dari subnet yang paling jauh dengan cloud/nat hingga hanya memiliki 1 subnet (induk).
+![1.1](https://github.com/Naufalar10/Jarkom-Modul-4-D05-2022/blob/main/jarkom_4/1.png)
+![1.2](https://github.com/Naufalar10/Jarkom-Modul-4-D05-2022/blob/main/jarkom_4/2.png)
+![1.3](https://github.com/Naufalar10/Jarkom-Modul-4-D05-2022/blob/main/jarkom_4/3.png)
+![1.4](https://github.com/Naufalar10/Jarkom-Modul-4-D05-2022/blob/main/jarkom_4/4.png)
+![1.5](https://github.com/Naufalar10/Jarkom-Modul-4-D05-2022/blob/main/jarkom_4/5.png)
+![1.6](https://github.com/Naufalar10/Jarkom-Modul-4-D05-2022/blob/main/jarkom_4/6.png)
+![1.7](https://github.com/Naufalar10/Jarkom-Modul-4-D05-2022/blob/main/jarkom_4/7.png)
+![1.8](https://github.com/Naufalar10/Jarkom-Modul-4-D05-2022/blob/main/jarkom_4/8.png)
+![1.9](https://github.com/Naufalar10/Jarkom-Modul-4-D05-2022/blob/main/jarkom_4/9.png)
+![1.10](https://github.com/Naufalar10/Jarkom-Modul-4-D05-2022/blob/main/jarkom_4/10.png)
