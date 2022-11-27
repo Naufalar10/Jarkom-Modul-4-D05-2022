@@ -206,3 +206,30 @@ Kita melakukan penggabungan subnet-subnet paling bawah dalam topologi yaitu dimu
 ![1.8](https://github.com/Naufalar10/Jarkom-Modul-4-D05-2022/blob/main/jarkom_4/8.png)
 ![1.9](https://github.com/Naufalar10/Jarkom-Modul-4-D05-2022/blob/main/jarkom_4/9.png)
 ![1.10](https://github.com/Naufalar10/Jarkom-Modul-4-D05-2022/blob/main/jarkom_4/10.png)
+
+## The Reference
+``` auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet dhcp
+
+auto eth1
+iface eth1 inet static
+address 10.8.68.1
+netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+address 10.8.66.1
+netmask 255.255.255.252
+
+auto eth3
+iface eth3 inet static
+address 10.8.32.1
+netmask 255.255.255.252
+
+auto eth4
+iface eth4 inet static
+address 10.8.160.1
+netmask 255.255.255.252```
