@@ -216,20 +216,79 @@ iface eth0 inet dhcp
 
 auto eth1
 iface eth1 inet static
-address 10.8.68.1
+address 192.187.68.1
 netmask 255.255.255.252
 
 auto eth2
 iface eth2 inet static
-address 10.8.66.1
+address 192.187.66.1
 netmask 255.255.255.252
 
 auto eth3
 iface eth3 inet static
-address 10.8.32.1
+address 192.187.32.1
 netmask 255.255.255.252
 
 auto eth4
 iface eth4 inet static
-address 10.8.160.1
-netmask 255.255.255.252```
+address 192.187.160.1
+netmask 255.255.255.252
+```
+
+## Ashaf
+``` 
+auto eth0
+iface eth0 inet static
+address 192.187.144.2
+netmask 255.255.255.192
+gateway 192.187.144.1
+```
+
+## The Minister
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 192.187.136.2
+netmask 255.255.255.252
+gateway 192.8.136.1
+
+auto eth1
+iface eth1 inet static
+address 192.187.133.1
+netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+address 192.187.128.1
+netmask 255.255.252.0
+```
+
+## Guidessu
+```
+auto eth0
+iface eth0 inet static
+address 192.187.128.2
+netmask 255.255.252.0
+gateway 192.187.128.1
+```
+
+## The Daundless
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 192.187.133.2
+netmask 255.255.255.252
+gateway 192.187.133.1
+
+auto eth1
+iface eth1 inet static
+address 192.187.132.1
+netmask 255.255.255.0
+```
+
