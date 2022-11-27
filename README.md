@@ -334,3 +334,241 @@ iface eth1 inet static
 address 192.187.64.1
 netmask 255.255.254.0
 ```
+
+## Haines
+```
+auto eth0
+iface eth0 inet static
+address 192.187.64.2
+netmask 255.255.254.0
+gateway 192.187.64.1
+```
+
+## Corvekt
+```
+auto eth0
+iface eth0 inet static
+address 192.187.64.3
+netmask 255.255.254.0
+gateway 192.187.64.1
+```
+
+## The Instrument
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 192.187.32.2
+netmask 255.255.255.252
+gateway 192.187.32.1
+
+auto eth1
+iface eth1 inet static
+address 192.187.17.1
+netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+address 192.187.4.1
+netmask 255.255.255.252
+
+auto eth3
+iface eth3 inet static
+address 192.187.8.1
+netmask 255.255.255.128
+```
+
+## Matt Cugat
+```
+auto eth0
+iface eth0 inet static
+address 192.187.8.2
+netmask 255.255.255.128
+gateway 192.187.8.1
+```
+
+## The Profound
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 192.187.17.2
+netmask 255.255.255.252
+gateway 192.187.17.1
+
+auto eth1
+iface eth1 inet static
+address 192.187.16.1
+netmask 255.255.255.128
+
+auto eth2
+iface eth2 inet static
+address 192.187.16.129
+netmask 255.255.255.128
+```
+
+## Spendrow
+```
+auto eth0
+iface eth0 inet static
+address 192.187.16.2
+netmask 255.255.255.128
+gateway 192.187.16.1
+```
+
+## Helga
+```
+auto eth0
+iface eth0 inet static
+address 192.187.16.130
+netmask 255.255.255.128
+gateway 192.187.16.129
+```
+
+## The Firefist
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 192.187.4.2
+netmask 255.255.255.252
+gateway 192.187.4.1
+
+auto eth1
+iface eth1 inet static
+address 192.187.2.1
+netmask 255.255.254.0
+
+auto eth2
+iface eth2 inet static
+address 192.187.0.1
+netmask 255.255.255.0
+```
+
+## Oakleave
+```
+auto eth0
+iface eth0 inet static
+address 192.187.2.2
+netmask 255.255.254.0
+gateway 192.187.2.1
+```
+
+## Keith
+```
+auto eth0
+iface eth0 inet static
+address 192.187.0.3
+netmask 255.255.255.0
+gateway 192.187.0.1
+```
+
+## The Queen
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 192.187.0.2
+netmask 255.255.255.0
+gateway 192.187.0.1
+
+auto eth1
+iface eth1 inet static
+address 192.187.1.1
+netmask 255.255.255.252
+```
+## The Witch
+```
+auto eth0
+iface eth0 inet static
+address 192.187.1.2
+netmask 255.255.255.252
+gateway 192.187.1.1
+```
+
+# Routing
+Setelah itu akan dilakukan routing pada GNS3 agar semua router, server, dan client akan saling terhubung
+
+## The Reference
+```
+route add -net 192.187.144.0 netmask 255.255.255.192 gw 192.187.160.2
+route add -net 192.187.136.0 netmask 255.255.255.252 gw 192.187.160.2
+route add -net 192.187.128.0 netmask 255.255.252.0 gw 192.187.160.2
+route add -net 192.187.133.0 netmask 255.255.255.252 gw 192.187.160.2
+route add -net 192.187.132.0 netmask 255.255.255.0 gw 192.187.160.2
+
+route add -net 192.187.64.0 netmask 255.255.254.0 gw 192.187.66.2
+
+route add -net 192.187.8.0 netmask 255.255.255.128 gw 192.187.32.2
+route add -net 192.187.17.0 netmask 255.255.255.252 gw 192.187.32.2
+route add -net 192.187.16.0 netmask 255.255.255.128 gw 192.187.32.2
+route add -net 192.187.16.128 netmask 255.255.255.128 gw 192.187.32.2
+route add -net 192.187.4.0 netmask 255.255.255.252 gw 192.187.32.2
+route add -net 192.187.2.0 netmask 255.255.254.0 gw 192.187.32.2
+route add -net 192.187.0.0 netmask 255.255.255.0 gw 192.187.32.2
+route add -net 192.187.1.0 netmask 255.255.255.252 gw 192.187.32.2
+```
+
+## The Order
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.187.160.1
+
+route add -net 192.187.128.0 netmask 255.255.252.0 gw 192.187.136.2
+route add -net 192.187.133.0 netmask 255.255.255.252 gw 192.187.136.2
+route add -net 192.187.132.0 netmask 255.255.255.0 gw 192.187.136.2
+```
+
+## The Minister 
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.187.136.1
+
+route add -net 192.187.132.0 netmask 255.255.255.0 gw 192.187.133.2
+```
+## The Daundless
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.187.133.1
+```
+
+## The Magical
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.187.66.1
+```
+
+## The Instrument
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.187.32.1
+
+route add -net 192.187.16.0 netmask 255.255.255.128 gw 192.187.17.2
+route add -net 192.187.16.128 netmask 255.255.255.128 gw 192.187.17.2
+
+route add -net 192.187.2.0 netmask 255.255.254.0 gw 192.187.4.2
+route add -net 192.187.0.0 netmask 255.255.255.0 gw 192.187.4.2
+route add -net 192.187.1.0 netmask 255.255.255.252 gw 192.187.4.2
+```
+
+## The Profound
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.187.17.1
+```
+## The Firefist
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.187.4.1
+
+route add -net 192.187.1.0 netmask 255.255.255.252 gw 192.187.0.2
+```
+
+## The Queen
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.187.0.1
+```
+
+# Kendala
+Saat melakukan ping di cpt, ada yang harus dilakukan 2-3x tidak bisa langsung 1x karena failed, namun setelah dicoba lagi menjadi succesful
