@@ -192,3 +192,7 @@ Namun khusus untuk `The Resonance`, router ini membutuhkan 3 lubang ethernet. Ma
 192.187.4.0/23 via 192.187.9.254
 192.187.11.224/30 via 192.187.9.254
 ```
+
+# CIDR - GNS3
+## Penggabungan Subnet
+Kita melakukan penggabungan subnet-subnet paling bawah dalam topologi yaitu dimulai dari subnet yang paling jauh dengan cloud/nat hingga hanya memiliki 1 subnet (induk).
