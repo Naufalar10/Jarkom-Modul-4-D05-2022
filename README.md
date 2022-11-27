@@ -291,4 +291,46 @@ iface eth1 inet static
 address 192.187.132.1
 netmask 255.255.255.0
 ```
+## Phanora
+```
+auto eth0
+iface eth0 inet static
+address 192.187.132.2
+netmask 255.255.255.0
+gateway 192.187.132.1
+```
 
+## Johan
+```
+auto eth0
+iface eth0 inet static
+address 192.187.132.3
+netmask 255.255.255.0
+gateway 192.187.132.1
+```
+
+## The Beast
+```
+auto eth0
+iface eth0 inet static
+address 192.187.68.2
+netmask 255.255.255.252
+gateway 192.187.68.1
+```
+
+## The Magical
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 192.187.66.2
+netmask 255.255.255.252
+gateway 192.187.66.1
+
+auto eth1
+iface eth1 inet static
+address 192.187.64.1
+netmask 255.255.254.0
+```
